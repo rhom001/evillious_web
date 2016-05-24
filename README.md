@@ -25,6 +25,7 @@ The following are some objectives for the program for its usability.
   * The database backup should be easy for the machine to read from and write to.
 * Scripts should be written to call commands needed to set up the program.
   * Need a way to open program on to the browser.
+  
 ### <a name="sec1-2">Required Information
 The following is the groundwork for the types of data that will be stored in the SQL database. This will eventually be displayed on the PHP interface.
 
