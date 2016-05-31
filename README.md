@@ -1,6 +1,6 @@
 # Evillious Chronicles Library (EC Web)
 ## Note:
-This is a web version of the Evillious Chronicles library project created through a web development tools. Besides allowing for information about Evillious Chronicles to be displayed, it will also allow for more visual information to be presented.
+This is a web version of the Evillious Chronicles library project, (abbreviated as EC Web), created through a web development tools. Besides allowing for information about Evillious Chronicles to be displayed, it will also allow for more visual information to be presented.
 
 Although PHP will be used to display the information, the information itself will be stored in a MySQL database.
 
@@ -8,7 +8,7 @@ Although PHP will be used to display the information, the information itself wil
 * [Evillious Chronicles Library (Web) Overview](#sec1)
   * [Project Objectives](#sec1-1)
   * [Required Information](#sec1-2)
-
+* [EC Web Directory Structure](#sec2)
 
 ## <a name="sec1">Evillious Chronicles Library (Web) Overview</a>
 ### <a name="sec1-1">Project Objectives</a>
@@ -82,3 +82,6 @@ The following is the groundwork for the types of data that will be stored in the
     * Which _vocaloid_ is used
       * Important for determining certain displays
     * Which _character_ they portray
+
+## <a name="sec2">EC Web Directory</a>
+To keep the program organized, there will be directories based on the source files.
