@@ -1,0 +1,14 @@
+#!/bin/bash
+# Script for installing the EC Web
+
+echo "Welcome to the EC Web installation script!"
+
+# Detect what type of Linux distribution is used to determine LAMP installation script.
+echo "Checking if LAMP stack is installed..."
+(cat /proc/version | grep ubuntu &> /dev/null && ./scripts/install-ubuntu.sh) || (cat /proc/version | grep red-hat && echo "Uses Red Hat!")
+
+echo "LAMP stack has been installed..."
+
+# Creates the database and populate it with data.
+echo "Installing mothy database..."
+./database-mothy-update.sh
