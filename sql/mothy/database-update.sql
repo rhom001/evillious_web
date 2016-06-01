@@ -142,51 +142,38 @@ CREATE TABLE Artist(
 );
 
 /* Generates the data for each table. */
-LOAD DATA LOCAL 'data/User.csv' INTO TABLE Users
-    FIELDS TERMINATED BY ','
-    LINES TERMINATED BY '\r\n';
-/*
-LOAD DATA LOCAL 'data/Song.csv' INTO TABLE Song
-    FIELDS TERMINATED BY ','
-    LINES TERMINATED BY '\r\n';
+LOAD DATA LOCAL INFILE 'data/User.csv' INTO TABLE Users
+    FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL 'data/Vocaloid.csv' INTO TABLE Vocaloid
-    FIELDS TERMINATED BY ','
-    LINES TERMINATED BY '\r\n';
+LOAD DATA LOCAL INFILE 'data/Song.csv' INTO TABLE Song
+    FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL 'data/Character.csv' INTO TABLE Persona
-    FIELDS TERMINATED BY ','
-    LINES TERMINATED BY '\r\n';
+LOAD DATA LOCAL INFILE 'data/Vocaloid.csv' INTO TABLE Vocaloid
+    FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL 'data/Role.csv' INTO TABLE Appear
-    FIELDS TERMINATED BY ','
-    LINES TERMINATED BY '\r\n';
+LOAD DATA LOCAL INFILE 'data/Character.csv' INTO TABLE Persona
+    FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL 'data/Album.csv' INTO TABLE Album
-    FIELDS TERMINATED BY ','
-    LINES TERMINATED BY '\r\n';
+LOAD DATA LOCAL INFILE 'data/Role.csv' INTO TABLE Appear
+    FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL 'data/Track.csv' INTO TABLE Track
-    FIELDS TERMINATED BY ','
-    LINES TERMINATED BY '\r\n';
+LOAD DATA LOCAL INFILE 'data/Album.csv' INTO TABLE Album
+    FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL 'data/Series.csv' INTO TABLE Series
-    FIELDS TERMINATED BY ','
-    LINES TERMINATED BY '\r\n';
+LOAD DATA LOCAL INFILE 'data/Track.csv' INTO TABLE Track
+    FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL 'data/Part.csv' INTO TABLE Part
-    FIELDS TERMINATED BY ','
-    LINES TERMINATED BY '\r\n';
+LOAD DATA LOCAL INFILE 'data/Series.csv' INTO TABLE Series
+    FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL 'data/Canon.csv' INTO TABLE Canon
-    FIELDS TERMINATED BY ','
-    LINES TERMINATED BY '\r\n';
+LOAD DATA LOCAL INFILE 'data/Part.csv' INTO TABLE Part
+    FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL 'data/Video.csv' INTO TABLE Video
-    FIELDS TERMINATED BY ','
-    LINES TERMINATED BY '\r\n';
+LOAD DATA LOCAL INFILE 'data/Canon.csv' INTO TABLE Canon
+    FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL 'data/Artist.csv' INTO TABLE Artist
-    FIELDS TERMINATED BY ','
-    LINES TERMINATED BY '\r\n';
-*/
+LOAD DATA LOCAL INFILE 'data/Video.csv' INTO TABLE Video
+    FIELDS TERMINATED BY ',';
+    
+LOAD DATA LOCAL INFILE 'data/Artist.csv' INTO TABLE Artist
+    FIELDS TERMINATED BY ',';
