@@ -37,7 +37,7 @@ CREATE TABLE Persona(
     cname CHAR(30) UNIQUE NOT NULL,
     vname CHAR(30) NOT NULL,
     cid INT UNIQUE NOT NULL,
-    FOREIGN KEY(vname) REFERENCES(Voca loid),
+    FOREIGN KEY(vname) REFERENCES(Vocaloid),
     PRIMARY KEY(cid)
 );
 
