@@ -1,4 +1,7 @@
 /* Updates the tables in the database. */
+/* Selects mothy database. */
+USE mothy;
+
 /* Drops the tables. */
 DROP TABLE Artist;
 DROP TABLE Video;
