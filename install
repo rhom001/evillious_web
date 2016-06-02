@@ -11,4 +11,4 @@ echo "LAMP stack has been installed..."
 
 # Creates the database and populate it with data.
 echo "Installing mothy database..."
-./database-mothy-update.sh
+./scripts/database-mothy-update.sh
