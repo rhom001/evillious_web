@@ -82,7 +82,8 @@ CREATE TABLE Part(
     nid INT NOT NULL,
     sid INT NOT NULL,
     pnum INT NOT NULL,
-    FOREIGN KEY (nid) REFERENCES Series(nid)
+    FOREIGN KEY (nid) REFERENCES Series(nid),
+    FOREIGN KEY (sid) REFERENCES Song(sid),
     PRIMARY KEY(nid, sid)
 );
 
@@ -99,7 +100,7 @@ CREATE TABLE Video(
     upload DATE NOT NULL,
     vlink CHAR(30) UNIQUE NOT NULL,
     vid INT UNIQUE NOT NULL,
-    FOREIGN KEY(sid) REFERENCES Song(sid)
+    FOREIGN KEY(sid) REFERENCES Song(sid),
     PRIMARY KEY(vid)
 );
 
