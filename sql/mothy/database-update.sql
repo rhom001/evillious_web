@@ -58,7 +58,7 @@ CREATE TABLE Persona(
     cname CHAR(30) UNIQUE NOT NULL,
     vname CHAR(30) NOT NULL,
     cid INT UNIQUE NOT NULL,
-    FOREIGN KEY(vname) REFERENCES(Vocaloid),
+    FOREIGN KEY(vname) REFERENCES Vocaloid(vname),
     PRIMARY KEY(cid)
 );
 
@@ -68,8 +68,8 @@ CREATE TABLE Appear(
     cid INT NOT NULL,
     sid INT NOT NULL,
     appears CHAR(10),
-    FOREIGN KEY(cid) REFERENCES(Persona),
-    FOREIGN KEY(sid) REFERENCES(Song),
+    FOREIGN KEY(cid) REFERENCES Persona(cid),
+    FOREIGN KEY(sid) REFERENCES Song(sid),
     PRIMARY KEY(sid, cid)
 );
 
@@ -90,8 +90,8 @@ CREATE TABLE Track(
     sid INT,
     tnum INT NOT NULL,
     salias CHAR(30) NOT NULL,
-    FOREIGN KEY(aid) REFERENCES(Album),
-    FOREIGN KEY(sid) REFERENCES(Song),
+    FOREIGN KEY(aid) REFERENCES Album(aid),
+    FOREIGN KEY(sid) REFERENCES Song(sid),
     PRIMARY KEY(aid, tnum)
 );
 
@@ -110,6 +110,8 @@ CREATE TABLE Part(
     nid INT NOT NULL,
     sid INT NOT NULL,
     pnum INT NOT NULL,
+    FOREIGN KEY(sid) REFERENCES Song(sid)
+    FOREIGN KEY(nid) REFERENCES Series(nid)
     PRIMARY KEY(nid, sid)
 );
 
@@ -118,7 +120,7 @@ CREATE TABLE Part(
 CREATE TABLE Canon(
     sid INT UNIQUE NOT NULL,
     ec INT,
-    FOREIGN KEY(sid) REFERENCES(Song)
+    FOREIGN KEY(sid) REFERENCES Song(sid)
 );
 
 /* Creates the Video table. */
@@ -129,7 +131,7 @@ CREATE TABLE Video(
     upload DATE NOT NULL,
     vlink CHAR(30) UNIQUE NOT NULL,
     vid INT UNIQUE NOT NULL,
-    FOREIGN KEY(sid) REFERENCES(Song)
+    FOREIGN KEY(sid) REFERENCES Song(sid)
     PRIMARY KEY(vid)
 );
 
@@ -138,7 +140,7 @@ CREATE TABLE Video(
 CREATE TABLE Artist(
     vid INT NOT NULL,
     aname INT NOT NULL,
-    FOREIGN KEY(vid) REFERENCES(Video)
+    FOREIGN KEY(vid) REFERENCES Video(vid)
 );
 
 /* Generates the data for each table. */
