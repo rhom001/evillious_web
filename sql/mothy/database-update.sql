@@ -144,38 +144,38 @@ CREATE TABLE Artist(
 );
 
 /* Generates the data for each table. */
-LOAD DATA LOCAL INFILE 'data/User.csv' INTO TABLE Users
+LOAD DATA LOCAL INFILE '~/evillious_web/sql/mothy/data/User.csv' INTO TABLE Users
     FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL INFILE 'data/Song.csv' INTO TABLE Song
+LOAD DATA INFILE '~/evillious_web/sql/mothy/data/Song.csv' INTO TABLE Song
     FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL INFILE 'data/Vocaloid.csv' INTO TABLE Vocaloid
+LOAD DATA INFILE '~/evillious_web/sql/mothy/data/Vocaloid.csv' INTO TABLE Vocaloid
     FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL INFILE 'data/Character.csv' INTO TABLE Persona
+LOAD DATA INFILE '~/evillious_web/sql/mothy/data/Character.csv' INTO TABLE Persona
     FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL INFILE 'data/Role.csv' INTO TABLE Appear
+LOAD DATA INFILE '~/evillious_web/sql/mothy/data/Role.csv' INTO TABLE Appear
     FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL INFILE 'data/Album.csv' INTO TABLE Album
+LOAD DATA INFILE '~/evillious_web/sql/mothy/data/Album.csv' INTO TABLE Album
     FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL INFILE 'data/Track.csv' INTO TABLE Track
+LOAD DATA INFILE '~/evillious_web/sql/mothy/data/Track.csv' INTO TABLE Track
     FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL INFILE 'data/Series.csv' INTO TABLE Series
+LOAD DATA INFILE '~/evillious_web/sql/mothy/data/Series.csv' INTO TABLE Series
     FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL INFILE 'data/Part.csv' INTO TABLE Part
+LOAD DATA INFILE '~/evillious_web/sql/mothy/data/Part.csv' INTO TABLE Part
     FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL INFILE 'data/Canon.csv' INTO TABLE Canon
+LOAD DATA INFILE '~/evillious_web/sql/mothy/data/Canon.csv' INTO TABLE Canon
     FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL INFILE 'data/Video.csv' INTO TABLE Video
+LOAD DATA INFILE '~/evillious_web/sql/mothy/data/Video.csv' INTO TABLE Video
     FIELDS TERMINATED BY ',';
     
-LOAD DATA LOCAL INFILE 'data/Artist.csv' INTO TABLE Artist
+LOAD DATA INFILE '~/evillious_web/sql/mothy/data/Artist.csv' INTO TABLE Artist
     FIELDS TERMINATED BY ',';
