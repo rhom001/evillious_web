@@ -5,4 +5,5 @@ sudo mysql < sql/mothy/database-create.sql
 
 # Moves to the correct directory for the local directory.
 cd ~/evillious_web/sql/mothy
-sudo mysql < ~/evillioud_web/sql/mothy/database-update.sql
+sudo mysql < ~/evillious_web/sql/mothy/database-update.sql
+cd ~/evillious_web
