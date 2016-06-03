@@ -9,6 +9,11 @@ echo "Checking if LAMP stack is installed..."
 
 echo "LAMP stack has been installed..."
 
+
 # Creates the database and populate it with data.
 echo "Installing mothy database..."
 ./scripts/database-mothy-update.sh
+
+# Creates the data file path in the MySQL data file directory
+sudo mkdir /var/lib/mysql-files/ec-web
+sudo mkdir /var/lib/mysql-files/ec-web/data-mothy
