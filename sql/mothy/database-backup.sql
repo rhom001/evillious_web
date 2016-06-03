@@ -3,7 +3,7 @@
 USE mothy;
 
 /* Exports table data to CSV files. */
-SELECT * FROM Users INTO OUTFILE '/var/lib/mysql-files/ec-web/data-mothy/User.csv'
+SELECT * FROM Users INTO OUTFILE '/var/lib/mysql-files/User.csv'
     FIELDS TERMINATED BY ',';
 
 SELECT * FROM Song INTO OUTFILE '/var/lib/mysql-files/ec-web/data-mothy/Song.csv'
@@ -12,7 +12,7 @@ SELECT * FROM Song INTO OUTFILE '/var/lib/mysql-files/ec-web/data-mothy/Song.csv
 SELECT * FROM Vocaloid INTO OUTFILE '/var/lib/mysql-files/ec-web/data-mothy/Vocaloid.csv'
     FIELDS TERMINATED BY ',';
     
-SELECT * FROM Persona INTO OUTFILE '/var/lib/mysql-files/ec-web/data-mothy/Character.csv'
+SELECT * FROM Persona INTO OUTFILE '/var/lib/mysql-files/Character.csv'
     FIELDS TERMINATED BY ',';
     
 SELECT * FROM Appear INTO OUTFILE '/var/lib/mysql-files/ec-web/data-mothy/Role.csv'
