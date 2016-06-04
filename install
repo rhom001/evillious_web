@@ -9,6 +9,10 @@ echo "Checking if LAMP stack is installed..."
 
 echo "LAMP stack has been installed..."
 
+# Creates a symbolic link to the website
+cd /var/www/html
+ln -s /home/$USER/evillious_web ec_web
+cd /home/$USER/evillious_web
 
 # Creates the database and populate it with data.
 echo "Installing mothy database..."
